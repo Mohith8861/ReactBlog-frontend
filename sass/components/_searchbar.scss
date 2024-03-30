@@ -1,0 +1,17 @@
+.searchbar {
+  width: 40%;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: none;
+  border-color: #e5e7eb;
+  & :focus {
+    border: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: none;
+    border-color: #e5e7eb;
+  }
+}

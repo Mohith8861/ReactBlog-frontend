@@ -1,0 +1,25 @@
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 1rem 0;
+    border-bottom: solid 2px blue;
+    & h1 {
+        font-size: 2.5rem;
+    }
+
+    & h2 {
+        font-size: 1.3rem;
+    }
+}
+
+.title {
+    color: #ffffff;
+    text-decoration: wavy;
+}
+.article-subheading{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}

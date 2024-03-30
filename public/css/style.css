@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Nova Square", sans-serif; }
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 1rem 0;
+  border-bottom: solid 2px blue; }
+  .heading h1 {
+    font-size: 2.5rem; }
+  .heading h2 {
+    font-size: 1.3rem; }
+
+.title {
+  color: #ffffff;
+  text-decoration: wavy; }
+
+.article-subheading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem; }
+
+/*
+ 0 - 600px: Phone 
+ 600 - 900px: Tablet portrait 
+ 900 - 1200px: Tablet landscape 
+ [1200 - 1800] is where our normal styles apply 
+ 1800px+ : Big desktop
+ */
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row; }
+
+.content {
+  width: 100%;
+  padding: 1rem;
+  line-height: 1.7rem; }
+
+.contentbox {
+  width: 100%;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  margin-bottom: 5rem; }
+  .contentbox .title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600; }
+  .contentbox .box {
+    width: 100%;
+    min-height: 10rem;
+    display: flex;
+    margin-bottom: 2rem; }
+
+.bigbox {
+  margin-bottom: 1rem; }
+
+.article-heading {
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 2px blue; }
+
+.imgbox1 {
+  min-width: 30%; }
+
+.imgbox {
+  max-width: 100%;
+  max-height: 100%;
+  flex: 0 0 auto;
+  text-wrap: wrap;
+  position: relative;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #002897;
+  border-radius: 5px;
+  padding: 0.2rem;
+  overflow: hidden; }
+  .imgbox img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block; }
+  .imgbox p {
+    padding: 0.5rem;
+    color: #ffffffdc;
+    font-size: 0.9rem;
+    line-height: 1.1rem; }
+
+.imggal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.5rem; }
+  .imggal .galimgbox1 {
+    min-width: 100%;
+    min-height: 90%;
+    position: relative; }
+  .imggal .galimgbox {
+    width: 100%;
+    height: 100%;
+    text-wrap: wrap;
+    position: relative;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #002897;
+    padding: 0.2rem;
+    overflow: hidden;
+    object-fit: cover; }
+    .imggal .galimgbox img {
+      width: 100%;
+      height: 100%;
+      display: block; }
+    .imggal .galimgbox p {
+      padding: 0.5rem;
+      color: #ffffffdc;
+      font-size: 0.9rem;
+      line-height: 1.1rem; }
+
+.footer {
+  width: 100%;
+  height: 5rem; }
+
+.btn :link,
+.btn :visited {
+  font-size: 1.6rem;
+  padding: 1.4rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*Add later when we use this for the button in form*/
+  border: none;
+  cursor: pointer; }
+
+.btn :hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.btn:focus {
+  outline: none;
+  background-color: #2e864b; }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+
+.btn--white::after {
+  background-color: #fff; }
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+
+.btn--green::after {
+  background-color: #55c57a; }
+
+.btnBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-right: 20px; }
+  .btnBlock button {
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0440c0;
+    background-color: white;
+    border: none; }
+
+.navbar {
+  background-color: #002897;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2; }
+
+.searchbar {
+  width: 40%;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: none;
+  border-color: #e5e7eb; }
+  .searchbar :focus {
+    border: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: none;
+    border-color: #e5e7eb; }
+
+.write {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  background-color: rgba(121, 123, 124, 0.055); }
+  .write input:focus,
+  .write textarea:focus {
+    outline: 0;
+    background-color: rgba(160, 160, 160, 0.137);
+    border-bottom: 3px solid blue; }
+  .writeForm {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: space-between; }
+    .writeFormGroup {
+      width: 80%;
+      margin: auto; }
+      .writeFormGroup label {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 0.7rem;
+        transition: all 0.3s; }
+      .writeFormGroup input {
+        padding: 0.5rem;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1.5rem;
+        outline: none;
+        border: 0;
+        background-color: rgba(160, 160, 160, 0.137);
+        transition: all 0.2s ease-in-out; }
+      .writeFormGroup textarea {
+        padding: 0.5rem;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1.1rem;
+        min-height: 7rem;
+        resize: none;
+        outline: 0;
+        border: 0;
+        transition: all 0.2s ease-in-out;
+        background-color: rgba(160, 160, 160, 0.137); }
+  .writeSubmit {
+    width: 10%;
+    margin: auto;
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #002897;
+    outline: none; }
+    .writeSubmit:hover {
+      cursor: pointer;
+      transform: translateY(-2px);
+      transition: all 0.3s; }
+
+*::selection {
+  background-color: #002897;
+  color: #ffffff; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background-color: #2dd81d; }

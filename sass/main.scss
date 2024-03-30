@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Nova Square", sans-serif;
+}
+@import "base/variables";
+@import "base/typography";
+@import "abstract/mixins";
+@import "layout/container";
+@import "layout/footer";
+@import "components/button";
+@import "components/buttonBlock";
+@import "components/navbar";
+@import "components/searchbar";
+@import "pages/form";
+
+
+*::selection {
+  background-color: $base-color;
+  color: #ffffff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background-color: #2dd81d;
+}
+
+
